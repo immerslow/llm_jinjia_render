@@ -1,0 +1,21 @@
+[project]
+name = "jinjia-render"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1.6",
+    "requests>=2.34.2",
+    "streamlit>=1.57.0",
+    "streamlit-ace>=0.1.1",
+    "streamlit-js-eval>=1.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
